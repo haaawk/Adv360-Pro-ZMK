@@ -127,7 +127,7 @@
         dvp_plus_4: dvp_plus_4 {
             compatible = "zmk,behavior-mod-morph";
             label = "DVP_PLUS_4";
-            bindings = <&kp PLUS>, <&kp KP_NUMBER_2>;
+            bindings = <&kp PLUS>, <&kp KP_NUMBER_4>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
