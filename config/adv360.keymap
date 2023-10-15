@@ -108,6 +108,62 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        dvp_star_0: dvp_star_0 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DVP_STAR_0";
+            bindings = <&kp STAR>, <&kp KP_NUMBER_0>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        dvp_rparenthesis_2: dvp_rparenthesis_2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DVP_RPARENTHESIS_2";
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp KP_NUMBER_2>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        dvp_plus_4: dvp_plus_4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DVP_PLUS_4";
+            bindings = <&kp PLUS>, <&kp KP_NUMBER_2>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        dvp_rbracket_6: dvp_rbracket_6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DVP_RBRACKET_6";
+            bindings = <&kp RIGHT_BRACKET>, <&kp KP_NUMBER_6>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        dvp_exclamation_8: dvp_exclamation_8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DVP_EXCLAMATION_8";
+            bindings = <&kp EXCLAMATION>, <&kp KP_NUMBER_8>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        dvp_hash_tick: dvp_hash_tick {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DVP_HASH_TICK";
+            bindings = <&kp HASH>, <&kp GRAVE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        dvp_at_caret: dvp_at_caret {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DVP_AT_CARET";
+            bindings = <&kp AT>, <&kp CARET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -115,11 +171,11 @@
 
         default_layer {
             bindings = <
-&dvp_dollar_tilde  &dvp_ampersand_percent  &dvp_lbracket_7  &dvp_lbrace_5   &dvp_rbrace_3  &dvp_lparenthesis_1  &dvp_equal_9                                                 &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB            &dvp_semicolon_colon    &dvp_comma_lt    &dvp_period_gt  &kp P          &kp Y                &none                                                        &tog 4     &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC            &kp A                   &kp O            &kp E           &kp U          &kp I                &none         &kp LGUI  &kp LCTRL      &kp RCTRL  &kp RGUI   &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT          &kp APOSTROPHE          &kp Q            &kp J           &kp K          &kp X                                        &kp LALT       &kp RALT                         &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2              &kp GRAVE               &kp CAPS         &kp LEFT        &kp RIGHT                           &kp BSPC      &kp DEL   &mo 4          &tog 1     &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
+&dvp_dollar_tilde  &dvp_ampersand_percent  &dvp_lbracket_7  &dvp_lbrace_5   &dvp_rbrace_3  &dvp_lparenthesis_1  &dvp_equal_9                                                 &mo 3          &dvp_star_0  &dvp_rparenthesis_2  &dvp_plus_4  &dvp_rbracket_6  &dvp_exclamation_8  &dvp_hash_tick
+&kp TAB            &dvp_semicolon_colon    &dvp_comma_lt    &dvp_period_gt  &kp P          &kp Y                &mo 3                                                        &dvp_at_caret  &kp F        &kp G                &kp C        &kp R            &kp L               &kp SLASH
+&kp ESC            &kp A                   &kp O            &kp E           &kp U          &kp I                &tog 4        &kp LGUI  &kp LCTRL      &kp RCTRL  &kp RGUI   &kp BACKSLASH  &kp D        &kp H                &kp T        &kp N            &kp S               &kp MINUS
+&kp LSHFT          &kp APOSTROPHE          &kp Q            &kp J           &kp K          &kp X                                        &kp LALT       &kp RALT                             &kp B        &kp M                &kp W        &kp V            &kp Z               &kp RSHFT
+&mo 2              &kp GRAVE               &kp CAPS         &kp LEFT        &kp RIGHT                           &kp BSPC      &kp DEL   &mo 4          &tog 1     &kp ENTER  &kp SPACE                   &kp UP               &kp DOWN     &kp LBKT         &kp RBKT            &mo 2
             >;
         };
 
