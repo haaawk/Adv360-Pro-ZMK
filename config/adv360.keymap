@@ -84,6 +84,30 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        dvp_semicolon_colon: dvp_semicolon_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DVP_SEMICOLON_COLON";
+            bindings = <&kp SEMICOLON>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        dvp_comma_lt: dvp_comma_lt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DVP_COMMA_LT";
+            bindings = <&kp COMMA>, <&kp LESS_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        dvp_period_gt: dvp_period_gt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DVP_PERIOD_GT";
+            bindings = <&kp PERIOD>, <&kp GREATER_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -91,11 +115,11 @@
 
         default_layer {
             bindings = <
-&dvp_dollar_tilde  &dvp_ampersand_percent  &dvp_lbracket_7  &dvp_lbrace_5  &dvp_rbrace_3  &dvp_lparenthesis_1  &dvp_equal_9                                                 &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB            &kp Q                   &kp W            &kp E          &kp R          &kp T                &none                                                        &tog 4     &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC            &kp A                   &kp S            &kp D          &kp F          &kp G                &none         &kp LGUI  &kp LCTRL      &kp RCTRL  &kp RGUI   &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT          &kp Z                   &kp X            &kp C          &kp V          &kp B                                        &kp LALT       &kp RALT                         &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2              &kp GRAVE               &kp CAPS         &kp LEFT       &kp RIGHT                           &kp BSPC      &kp DEL   &mo 4          &tog 1     &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
+&dvp_dollar_tilde  &dvp_ampersand_percent  &dvp_lbracket_7  &dvp_lbrace_5   &dvp_rbrace_3  &dvp_lparenthesis_1  &dvp_equal_9                                                 &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB            &dvp_semicolon_colon    &dvp_comma_lt    &dvp_period_gt  &kp P          &kp Y                &none                                                        &tog 4     &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC            &kp A                   &kp S            &kp D           &kp F          &kp G                &none         &kp LGUI  &kp LCTRL      &kp RCTRL  &kp RGUI   &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT          &kp Z                   &kp X            &kp C           &kp V          &kp B                                        &kp LALT       &kp RALT                         &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 2              &kp GRAVE               &kp CAPS         &kp LEFT        &kp RIGHT                           &kp BSPC      &kp DEL   &mo 4          &tog 1     &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
             >;
         };
 
