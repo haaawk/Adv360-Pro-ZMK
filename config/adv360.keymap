@@ -28,6 +28,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
         dvp_dollar_tilde: dvp_dollar_tilde {
             compatible = "zmk,behavior-mod-morph";
             label = "DVP_DOLLAR_TILDE";
@@ -36,6 +37,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         dvp_ampersand_percent: dvp_ampersand_percent {
             compatible = "zmk,behavior-mod-morph";
             label = "DVP_AMPERSAND_PERCENT";
@@ -44,6 +46,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         dvp_lbracket_7: dvp_lbracket_7 {
             compatible = "zmk,behavior-mod-morph";
             label = "DVP_LBRACKET_7";
@@ -52,6 +55,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         dvp_lbrace_5: dvp_lbrace_5 {
             compatible = "zmk,behavior-mod-morph";
             label = "DVP_LBRACE_5";
@@ -60,6 +64,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         dvp_rbrace_3: dvp_rbrace_3 {
             compatible = "zmk,behavior-mod-morph";
             label = "DVP_RBRACE_3";
@@ -68,6 +73,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         dvp_lparenthesis_1: dvp_lparenthesis_1 {
             compatible = "zmk,behavior-mod-morph";
             label = "DVP_LPARENTHESIS_1";
@@ -76,6 +82,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         dvp_equal_9: dvp_equal_9 {
             compatible = "zmk,behavior-mod-morph";
             label = "DVP_EQUAL_9";
@@ -84,6 +91,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         dvp_semicolon_colon: dvp_semicolon_colon {
             compatible = "zmk,behavior-mod-morph";
             label = "DVP_SEMICOLON_COLON";
@@ -92,6 +100,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         dvp_comma_lt: dvp_comma_lt {
             compatible = "zmk,behavior-mod-morph";
             label = "DVP_COMMA_LT";
@@ -100,6 +109,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         dvp_period_gt: dvp_period_gt {
             compatible = "zmk,behavior-mod-morph";
             label = "DVP_PERIOD_GT";
@@ -108,6 +118,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         dvp_star_0: dvp_star_0 {
             compatible = "zmk,behavior-mod-morph";
             label = "DVP_STAR_0";
@@ -116,6 +127,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         dvp_rparenthesis_2: dvp_rparenthesis_2 {
             compatible = "zmk,behavior-mod-morph";
             label = "DVP_RPARENTHESIS_2";
@@ -124,6 +136,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         dvp_plus_4: dvp_plus_4 {
             compatible = "zmk,behavior-mod-morph";
             label = "DVP_PLUS_4";
@@ -132,6 +145,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         dvp_rbracket_6: dvp_rbracket_6 {
             compatible = "zmk,behavior-mod-morph";
             label = "DVP_RBRACKET_6";
@@ -140,6 +154,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         dvp_exclamation_8: dvp_exclamation_8 {
             compatible = "zmk,behavior-mod-morph";
             label = "DVP_EXCLAMATION_8";
@@ -148,6 +163,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         dvp_hash_tick: dvp_hash_tick {
             compatible = "zmk,behavior-mod-morph";
             label = "DVP_HASH_TICK";
@@ -156,6 +172,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         dvp_at_caret: dvp_at_caret {
             compatible = "zmk,behavior-mod-morph";
             label = "DVP_AT_CARET";
@@ -171,31 +188,31 @@
 
         default_layer {
             bindings = <
-&dvp_dollar_tilde  &dvp_ampersand_percent  &dvp_lbracket_7  &dvp_lbrace_5   &dvp_rbrace_3  &dvp_lparenthesis_1  &dvp_equal_9                                                 &mo 3          &dvp_star_0  &dvp_rparenthesis_2  &dvp_plus_4  &dvp_rbracket_6  &dvp_exclamation_8  &dvp_hash_tick
-&kp TAB            &dvp_semicolon_colon    &dvp_comma_lt    &dvp_period_gt  &kp P          &kp Y                &mo 3                                                        &dvp_at_caret  &kp F        &kp G                &kp C        &kp R            &kp L               &kp SLASH
-&kp ESC            &kp A                   &kp O            &kp E           &kp U          &kp I                &tog 4        &kp LGUI  &kp LCTRL      &kp RCTRL  &kp RGUI   &kp BACKSLASH  &kp D        &kp H                &kp T        &kp N            &kp S               &kp MINUS
-&kp LSHFT          &kp APOSTROPHE          &kp Q            &kp J           &kp K          &kp X                                        &kp LALT       &kp RALT                             &kp B        &kp M                &kp W        &kp V            &kp Z               &kp RSHFT
-&mo 2              &kp GRAVE               &kp CAPS         &kp LEFT        &kp RIGHT                           &kp BSPC      &kp DEL   &mo 4          &tog 1     &kp ENTER  &kp SPACE                   &kp UP               &kp DOWN     &kp LBKT         &kp RBKT            &mo 2
+&dvp_dollar_tilde  &dvp_ampersand_percent  &dvp_lbracket_7  &dvp_lbrace_5   &dvp_rbrace_3  &dvp_lparenthesis_1  &dvp_equal_9                                                       &tog 3         &dvp_star_0  &dvp_rparenthesis_2  &dvp_plus_4  &dvp_rbracket_6  &dvp_exclamation_8  &dvp_hash_tick
+&kp TAB            &dvp_semicolon_colon    &dvp_comma_lt    &dvp_period_gt  &kp P          &kp Y                &mo 1                                                              &dvp_at_caret  &kp F        &kp G                &kp C        &kp R            &kp L               &kp SLASH
+&kp ESC            &kp A                   &kp O            &kp E           &kp U          &kp I                &tog 2        &kp LGUI   &kp LCTRL       &kp RCTRL      &kp RGUI   &kp BACKSLASH  &kp D        &kp H                &kp T        &kp N            &kp S               &kp MINUS
+&kp LSHFT          &kp APOSTROPHE          &kp Q            &kp J           &kp K          &kp X                                         &kp LALT        &kp RALT                                 &kp B        &kp M                &kp W        &kp V            &kp Z               &kp RSHFT
+&mo 2              &kp GRAVE               &kp CAPS         &kp LEFT        &kp RIGHT                           &kp LGUI      &kp ENTER  &kp DELETE      &kp BACKSPACE  &kp SPACE  &kp RGUI                    &kp UP               &kp DOWN     &kp LBKT         &kp RBKT            &mo 2
             >;
         };
 
         layer_keypad {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                      &mo 3   &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                       &none   &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none   &trans  &trans      &trans  &trans  &none   &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                   &trans      &trans                  &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &trans  &trans  &trans      &trans  &trans  &trans          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans      &trans        &kp KP_DOT     &trans           &trans
             >;
         };
 
         layer_fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &trans                                      &trans  &kp F7  &kp F8     &kp F9     &kp F10   &kp F11    &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp HOME   &kp END    &trans    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp UP     &kp DOWN   &kp LEFT  &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp PG_UP  &kp PG_DN  &trans    &trans     &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans     &trans     &trans    &trans     &trans
             >;
         };
 
@@ -206,16 +223,6 @@
 &none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
-            >;
-        };
-
-        layer_NAV {
-            bindings = <
-&none   &none  &none  &none  &none  &none  &none                                       &none   &none  &none      &none      &none     &none      &none
-&none   &none  &none  &none  &none  &none  &none                                       &trans  &none  &kp HOME   &kp END    &none     &none      &none
-&none   &none  &none  &none  &none  &none  &none   &trans  &trans      &trans  &trans  &none   &none  &kp UP     &kp DOWN   &kp LEFT  &kp RIGHT  &none
-&none   &none  &none  &none  &none  &none                  &trans      &trans                  &none  &kp PG_UP  &kp PG_DN  &none     &none      &none
-&trans  &none  &none  &none  &none         &trans  &trans  &trans      &trans  &trans  &trans         &none      &none      &none     &none      &none
             >;
         };
     };
