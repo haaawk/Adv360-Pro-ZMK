@@ -188,41 +188,31 @@
 
         default_layer {
             bindings = <
-&dvp_dollar_tilde  &dvp_ampersand_percent  &dvp_lbracket_7  &dvp_lbrace_5   &dvp_rbrace_3  &dvp_lparenthesis_1  &dvp_equal_9                                                       &tog 3         &dvp_star_0  &dvp_rparenthesis_2  &dvp_plus_4  &dvp_rbracket_6  &dvp_exclamation_8  &dvp_hash_tick
-&kp TAB            &dvp_semicolon_colon    &dvp_comma_lt    &dvp_period_gt  &kp P          &kp Y                &mo 1                                                              &dvp_at_caret  &kp F        &kp G                &kp C        &kp R            &kp L               &kp SLASH
-&kp ESC            &kp A                   &kp O            &kp E           &kp U          &kp I                &tog 2        &kp LGUI   &kp LCTRL       &kp RCTRL      &kp RGUI   &kp BACKSLASH  &kp D        &kp H                &kp T        &kp N            &kp S               &kp MINUS
-&kp LSHFT          &kp APOSTROPHE          &kp Q            &kp J           &kp K          &kp X                                         &kp LALT        &kp RALT                                 &kp B        &kp M                &kp W        &kp V            &kp Z               &kp RSHFT
-&mo 2              &kp GRAVE               &kp CAPS         &kp LEFT        &kp RIGHT                           &kp LGUI      &kp ENTER  &kp DELETE      &kp BACKSPACE  &kp SPACE  &kp RGUI                    &kp UP               &kp DOWN     &kp LBKT         &kp RBKT            &mo 2
+&dvp_dollar_tilde  &dvp_ampersand_percent  &dvp_lbracket_7  &dvp_lbrace_5   &dvp_rbrace_3  &dvp_lparenthesis_1  &dvp_equal_9                                                                   &none          &dvp_star_0  &dvp_rparenthesis_2  &dvp_plus_4  &dvp_rbracket_6  &dvp_exclamation_8  &dvp_hash_tick
+&kp TAB            &dvp_semicolon_colon    &dvp_comma_lt    &dvp_period_gt  &kp P          &kp Y                &tog 1                                                                         &dvp_at_caret  &kp F        &kp G                &kp C        &kp R            &kp L               &kp SLASH
+&kp ESC            &kp A                   &kp O            &kp E           &kp U          &kp I                &tog 2        &kp LEFT_CONTROL  &kp LALT        &kp RALT    &kp RIGHT_CONTROL  &kp BACKSLASH  &kp D        &kp H                &kp T        &kp N            &kp S               &kp MINUS
+&none              &kp APOSTROPHE          &kp Q            &kp J           &kp K          &kp X                                                &kp LSHIFT      &kp RSHIFT                                    &kp B        &kp M                &kp W        &kp V            &kp Z               &none
+&none              &kp GRAVE               &none            &kp LEFT        &kp RIGHT                           &kp DELETE    &kp ENTER         &kp LGUI        &kp RGUI    &kp SPACE          &kp BACKSPACE               &kp UP               &kp DOWN     &none            &none               &none
             >;
         };
 
         layer_keypad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans      &trans        &kp KP_DOT     &trans           &trans
+&trans  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &trans        &trans                                      &trans  &trans  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &trans
+&trans  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &bootloader   &trans                                      &trans  &trans  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &trans
+&trans  &bt BT_SEL 4     &bt BT_SEL 3     &bt BT_SEL 2     &bt BT_SEL 1     &bt BT_SEL 0  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &trans
+&trans  &trans           &bl BL_TOG       &bl BL_INC       &bl BL_DEC       &bt BT_CLR                    &trans      &trans                  &trans  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
+&trans  &trans           &trans           &trans           &trans                         &trans  &trans  &trans      &trans  &trans  &trans          &trans      &trans        &kp KP_DOT     &trans           &trans
             >;
         };
 
         layer_fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &trans                                      &trans  &kp F7  &kp F8     &kp F9     &kp F10   &kp F11    &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp HOME   &kp END    &trans    &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp UP     &kp DOWN   &kp LEFT  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp PG_UP  &kp PG_DN  &trans    &trans     &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans     &trans     &trans    &trans     &trans
-            >;
-        };
-
-        layer_mod {
-            bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&trans  &trans   &trans  &trans  &trans   &trans   &trans                                      &trans  &trans  &trans     &trans     &trans    &trans     &trans
+&trans  &kp F10  &kp F9  &kp F8  &kp F7   &kp F6   &trans                                      &trans  &trans  &kp HOME   &kp END    &trans    &trans     &trans
+&trans  &kp F5   &kp F4  &kp F3  &kp F2   &kp F1   &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp UP     &kp DOWN   &kp LEFT  &kp RIGHT  &trans
+&trans  &trans   &trans  &trans  &kp F12  &kp F11                  &trans      &trans                  &trans  &kp PG_UP  &kp PG_DN  &trans    &trans     &trans
+&trans  &trans   &trans  &trans  &trans            &trans  &trans  &trans      &trans  &trans  &trans          &trans     &trans     &trans    &trans     &trans
             >;
         };
     };
