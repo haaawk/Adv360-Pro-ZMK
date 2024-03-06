@@ -192,7 +192,7 @@
 &kp TAB            &dvp_semicolon_colon    &dvp_comma_lt    &dvp_period_gt  &kp P          &kp Y                &tog 1                                                                                             &dvp_at_caret  &kp F        &kp G                &kp C        &kp R            &kp L               &kp SLASH
 &kp ESC            &kp A                   &kp O            &kp E           &kp U          &kp I                &tog 2                   &kp LEFT_CONTROL  &kp LALT      &kp RALT    &kp RIGHT_CONTROL             &kp BACKSLASH  &kp D        &kp H                &kp T        &kp N            &kp S               &kp MINUS
 &kp LSHIFT         &kp APOSTROPHE          &kp Q            &kp J           &kp K          &kp X                                                           &kp LSHIFT    &kp RSHIFT                                               &kp B        &kp M                &kp W        &kp V            &kp Z               &kp RSHFT
-&kp LCTRL          &none                   &none            &kp LEFT        &kp RIGHT                                         &kp ENTER  &kp DELETE        &kp LGUI      &kp RGUI    &kp BACKSPACE      &kp SPACE                              &kp UP               &kp DOWN     &none            &none               &kp RCTRL
+&kp LCTRL          &kp PG_UP               &kp PG_DN        &kp HOME        &kp END                                           &kp ENTER  &kp DELETE        &kp LGUI      &kp RGUI    &kp BACKSPACE      &kp SPACE                              &kp LEFT             &kp UP       &kp DOWN_ARROW   &kp RIGHT           &kp RCTRL
             >;
         };
 
